@@ -1,0 +1,17 @@
+{
+  "name": "MEAN_belt_exam_02",
+  "authors": [
+    "joe <j.f.kleinschmidt@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

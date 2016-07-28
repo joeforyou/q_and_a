@@ -1,0 +1,19 @@
+<div ng-controller='questionDetailsController' class="container">
+	<h4><a href='/#/dashboard'>Home</a> | <a href='/#/question/{{question._id}}'>Go Back to Question</a></h4>
+	<button ng-click='logout()' class="btn btn-danger">Log Out</button>
+
+	<h1 ng-bind='question.text'></h1>
+	<h5 ng-bind='question.description'></h5>
+
+	<form name='form' ng-submit='answer(newAnswer)'>
+		<label>Your Answer<br><textarea rows="4" cols="50" ng-model='newAnswer.text' minlength='5' required></textarea></label><br>
+		<div role="alert">
+      		<span class="error" ng-show="form.newAnswer.$error.required">Required!</span>
+    	</div>
+		<label>Supporting details for your answer (optional)<br><textarea rows="4" cols="50" ng-model='newAnswer.details'></textarea></label>
+		<hr>
+		<button type='submit' class="btn btn-success">Submit</button>
+		<a href='/#/question/{{question._id}}'><button class="btn btn-danger">Cancel</button></a>
+	</form>
+	
+</div>
